@@ -26,3 +26,4 @@
 - Use HTML 5 validation that falls back to JS validation
 - Make sure the form is naturally keyboard accessible
 - Use semantic HTML
+Lindsay Burke
