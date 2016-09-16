@@ -5,11 +5,135 @@
   <meta http-equiv="cleartype" content="on">
   <title></title>
   
-  <link rel="dns-prefetch" href="//ajax.googleapis.com">
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
   
 </head>
 <body>
+
+<form id="contact" action="/sign-up-for-whoo" method="post">
+
+      <div class="header">
+        <h1>Sign up for Whoo!</h1>
+        <div class="description">50 projects, 500 images, 10 videos, domain binding, and technical support</div>
+      </div>
+
+  <div class="wrapper">
+
+    <fieldset>
+        <div class="step">1</div>
+        <legend>First, name your portfolio</legend>
+
+        <div class="light_blue_content">
+        
+            <label for="portfolio-name">
+              <div>Portfolio Name</div>
+                <input type="text" id="portfolio-name" name="portfolio-name" required/>
+            </label>
+
+             <label for="portfolio-address">
+              <div>Portfolio Address</div>
+                <input type="url" id="portfolio-address" name="portfolio-address" required/>
+                <span class="error">This field is required.</span>
+                <div class="sample-com">http://www.sample.com</div>
+            </label>
+        </div>
+   </fieldset>
+
+
+
+    <fieldset>
+        <span class="step">2</span>
+        <legend>Now, enter your account details</legend>
+
+        <div class="light_blue_content">
+          <label for="name">
+              <div>Name</div>
+                  <input type="text" id="name" name="user-name" required/>
+                  <span class="error">This field is required.</span>
+          </label>
+
+           <label for="email">
+              <div>Email</div>
+                <input type="email" id="email" name="mail" required/>
+                <div class="note">NOTE: We'll never share your email, promise.</div>
+          </label>
+
+          <label for="password">
+              <div>Password</div>
+                <input type="password" id="password" name="password" required/>
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="step">3</div>
+        <legend>Finally, enter your payment information</legend>
+          <div class="light_blue_content">
+            
+            <label for="card">
+              <div>Card Number</div>
+                <input class="card" type="text" id="number" name="card_number" required/>
+                  <div class="sprite-container">
+                    <div class="sprite sprite_amexx_e"/></div>
+                    <div class="sprite sprite_visa_e"/></div>
+                    <div class="sprite sprite_discover_e"/></div>
+                    <div class="sprite sprite_mastercard_e"/></div>
+                </div>
+            </label>
+
+            <label for="security_code">
+              <div>Security Code</div>
+                <input class="security" type="text" id="security" name="security_code" maxlength="4" required/>
+                <div class="sprite-container-security">
+                  <div class="sprite sprite_security"/></div>
+                </div>
+            </label>
+
+            <label for="date">
+              <div>Expiration Date</div>
+                <select name='expireMM' id='expireMM' required>
+                  <option value=''>Month</option>
+                  <option value='01'>Janaury</option>
+                  <option value='02'>February</option>
+                  <option value='03'>March</option>
+                  <option value='04'>April</option>
+                  <option value='05'>May</option>
+                  <option value='06'>June</option>
+                  <option value='07'>July</option>
+                  <option value='08'>August</option>
+                  <option value='09'>September</option>
+                  <option value='10'>October</option>
+                  <option value='11'>November</option>
+                  <option value='12'>December</option>
+              </select> 
+              <select name='expireYY' id='expireYY'>
+                  <option value=''>Year</option>
+                  <option value='10'>2016</option>
+                  <option value='11'>2017</option>
+                  <option value='12'>2018</option>
+                  <option value='12'>2019</option>
+                  <option value='12'>2020</option>
+                  <option value='12'>2021</option>
+                  <option value='12'>2022</option>
+              </select> 
+            </label>
+
+            <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4"/>
+          </div>
+        </div>
+
+        <div class="button_wrap">
+          <button class="button" type="submit">Create your portfolio</button>
+        </div>
+      </fieldset>
+  </div>
+  
+</form>
+
+  <script src='assets/js/vendor/jquery.min.js'></script>
+  <script src='assets/js/script.js'></script>
+
 
 </body>
 </html>
